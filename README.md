@@ -15,6 +15,9 @@ cd shadowsocks-libev/ && git submodule update --init --recursive
 make&& make install 
 
 adduser --system --no-create-home -s /bin/false shadowsocks
+
+pip install shadowsocks
+
 mkdir -m 755 /etc/shadowsocks
 echo "{ \
     \"server\":\"0.0.0.0\",\
@@ -25,7 +28,20 @@ echo "{ \
     \"fast_open\": true }" |tee /etc/shadowsocks/shadowsocks.json
    
    vi /etc/systemd/system/shadowsocks.service
+[Unit]
+Description=Shadowsocks
+[Service]
+TimeoutStartSec=0
+ExecStart=/usr/bin/ssserver -c /etc/shadowsocks.json
+[Install]
+WantedBy=multi-user.target
+
    systemctl daemon-reload
    systemctl enable shadowsocks
    systemctl start shadowsocks
    systemctl status shadowsocks
+
+2019-9
+
+http_proxy=socks5://127.0.0.1:1080 curl myip.ipip.net
+
