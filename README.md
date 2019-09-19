@@ -1,9 +1,8 @@
 # scriptforinstalltools
 专门用于安装常用工具
 
-yum upate && yum upgrade -y
-yum install -y gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto udns-devel    
-            libev-devel libsodium-devel mbedtls-devel git m2crypto c-ares-devel
+yum update && yum upgrade -y
+yum install -y gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto udns-devel libev-devel libsodium-devel mbedtls-devel git m2crypto c-ares-devel
 
 yum install -y rng-tools
 rngd -r /dev/urandom
@@ -44,4 +43,10 @@ WantedBy=multi-user.target
 2019-9
 
 http_proxy=socks5://127.0.0.1:1080 curl myip.ipip.net
+
+
+## 直接用doacker的方式启动更为方便
+
+https://shadowsocks.org/en/download/servers.html
+
 
