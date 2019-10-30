@@ -1,0 +1,3 @@
+#!/bin/bash -x
+docker run -d --rm --privileged -p 3128:3128 -e SERVER="65.49.227.174" -e SERVER_PORT="4443" -e ENCRYPT_METHOD="aes-256-cfb" -e PASSWORD="NmYyNTExNj" haoruiqian/ss-client-with-squid
+
