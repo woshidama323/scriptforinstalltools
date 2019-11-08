@@ -9,7 +9,7 @@ ManagerCommand=
 if [[ "$disversion" = "Ubuntu" ]];then
     
     ManagerCommand=apt-get
-elif [[ "$disversion" = "Ubuntu" || "$disversion" == "Amazon Linux AMI" ]];then
+elif [[ "$disversion" = "Ubuntu" || "$disversion" = "Amazon Linux AMI" ]];then
 
     ManagerCommand=yum 
 else
