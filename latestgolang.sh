@@ -6,12 +6,15 @@
 
 disversion=$(cat /etc/*-release |grep -E "^NAME=" |cut -d "=" -f 2)
 ManagerCommand=
-if [[ "$disversion" == "Ubuntu" ]];then
+if [[ "$disversion" = "Ubuntu" ]];then
     
     ManagerCommand=apt-get
-elif [[ "$disversion" == "Ubuntu" || "$disversion" == "Amazon Linux AMI" ]];then
+elif [[ "$disversion" = "Ubuntu" || "$disversion" == "Amazon Linux AMI" ]];then
 
     ManagerCommand=yum 
+else
+    echo "error...."
+    exit 1
 fi
 
 
