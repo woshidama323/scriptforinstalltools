@@ -9,7 +9,7 @@ ManagerCommand=
 if [[ "$disversion" == "\"Ubuntu\"" ]];then
     
     ManagerCommand=apt-get
-elif [[ "$disversion" == "\"Ubuntu\"" || "$disversion" == "\"Amazon Linux AMI\"" ]];then
+elif [[ "$disversion" == "\"Ubuntu\"" || "$disversion" == "\"Amazon Linux AMI\"" || "$disversion" == "\"CentOS Linux\"" ]];then
 
     ManagerCommand=yum 
 else
@@ -18,7 +18,7 @@ else
 fi
 
 
-$ManagerCommand install git wget curl -y  
+$ManagerCommand install git wget curl gcc -y  
 which tar >/dev/null
 if [[ $? -ne 0 ]];then
     $ManagerCommand install tar -y 
@@ -41,4 +41,9 @@ $ManagerCommand update  && wget https://dl.google.com/go/go1.13.4.linux-amd64.ta
 source /etc/profile
 
 
+#install dlv
+go get -u github.com/go-delve/delve/cmd/dlv
+
+# install 
+go get -u github.com/hashrocket/ws
 
