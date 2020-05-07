@@ -27,3 +27,8 @@ yum group install -y "Development Tools"
 docker save busybox > busybox.tar
 
 如果需要用docker load 进行装载
+
+## centos7 上安装git2.0版本
+
+https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-centos-7/
+
