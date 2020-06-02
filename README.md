@@ -31,4 +31,13 @@ docker save busybox > busybox.tar
 ## centos7 上安装git2.0版本
 
 https://computingforgeeks.com/how-to-install-latest-version-of-git-git-2-x-on-centos-7/
+centos7 上安装必要的开发工具
+  yum groups list
+  yum groups install Development Tools
+  yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
+  yum install https://centos7.iuscommunity.org/ius-release.rpm
+  yum install git2u-all
+  yum -y install https://packages.endpoint.com/rhel/7/os/x86_64/endpoint-repo-1.7-1.x86_64.rpm
+  yum install git2u-all
+
 
