@@ -41,3 +41,14 @@ centos7 上安装必要的开发工具
   yum install git2u-all
 
 
+
+|                     Legacy utility                     |    Replacement command     |                Note                 |
+| :----------------------------------------------------: | :------------------------: | :---------------------------------: |
+|   [ifconfig](https://en.wikipedia.org/wiki/Ifconfig)   |  ip addr, ip link, ip -s   |   Address and link configuration    |
+| [route](https://en.wikipedia.org/wiki/Route_(command)) |          ip route          |           Routing tables            |
+|                          arp                           |          ip neigh          |              Neighbors              |
+|                        iptunnel                        |         ip tunnel          |               Tunnels               |
+|                         nameif                         | ifrename, ip link set name |      Rename network interfaces      |
+|                        ipmaddr                         |          ip maddr          |              Multicast              |
+|    [netstat](https://en.wikipedia.org/wiki/Netstat)    |    ip -s, ss, ip route     | Show various networking statistics  |
+|                         brctl                          |           bridge           | Handle bridge addresses and devices |
