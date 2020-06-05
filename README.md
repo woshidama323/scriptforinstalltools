@@ -52,3 +52,7 @@ centos7 上安装必要的开发工具
 |                        ipmaddr                         |          ip maddr          |              Multicast              |
 |    [netstat](https://en.wikipedia.org/wiki/Netstat)    |    ip -s, ss, ip route     | Show various networking statistics  |
 |                         brctl                          |           bridge           | Handle bridge addresses and devices |
+
+
+## 获取本地ip地址的方法cpp 
+https://stackoverflow.com/questions/49335001/get-local-ip-address-in-c
