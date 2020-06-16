@@ -56,3 +56,11 @@ centos7 上安装必要的开发工具
 
 ## 获取本地ip地址的方法cpp 
 https://stackoverflow.com/questions/49335001/get-local-ip-address-in-c
+
+centos 8 安装开发工具
+dnf group install "Development Tools"
+
+dnf group install  "Development Tools" -y
+
+ 
+
