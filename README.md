@@ -64,3 +64,13 @@ dnf group install  "Development Tools" -y
 
  
 
+## markdown 转 PDF 的方法，同时带生成引用文献
+
+
+[资料](https://gist.github.com/maxogden/97190db73ac19fc6c1d9beee1a6e4fc8)
+
+
+pandoc --filter pandoc-citeproc --bibliography=myref.bib --csl=chinese-gb7714-2005-numeric.csl --variable papersize=a4paper -s paper_test.md -o paper.pdf
+
+
+需要工具pandoc pdflatex
