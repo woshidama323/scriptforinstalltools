@@ -74,3 +74,10 @@ pandoc --filter pandoc-citeproc --bibliography=myref.bib --csl=chinese-gb7714-20
 
 
 需要工具pandoc pdflatex
+
+
+## 本地机器 让两个远程的服务器直传数据
+scp -3  -r -i xxx.pem hello@10.10.10.10:/data hello@10.11.11.11:/data
+
+条件是 两个服务器用的是同一个私钥   如果不是需要在两台服务器上配置下各自的rsa 
+
