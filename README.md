@@ -81,3 +81,17 @@ scp -3  -r -i xxx.pem hello@10.10.10.10:/data hello@10.11.11.11:/data
 
 条件是 两个服务器用的是同一个私钥   如果不是需要在两台服务器上配置下各自的rsa 
 
+## git 自己未知道的信息
+
+
+This will tell git you want to start ignoring the changes to the file
+```
+git update-index --assume-unchanged path/to/file
+```
+
+When you want to start keeping track again
+```
+git update-index --no-assume-unchanged path/to/file
+　　
+```
+ 
