@@ -104,3 +104,5 @@ git update-index --no-assume-unchanged path/to/file
 3. cuda 相关信息
 https://stackoverflow.com/questions/38566367/installing-cuda-via-brew-and-dmg
 
+https://my.oschina.net/u/4408961/blog/3339845
+
