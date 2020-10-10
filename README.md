@@ -100,3 +100,7 @@ git update-index --no-assume-unchanged path/to/file
 1. 查询gpu相关信息 system_profiler SPDisplaysDataType
 
 2. 磁盘查询相关 diskutil 
+
+3. cuda 相关信息
+https://stackoverflow.com/questions/38566367/installing-cuda-via-brew-and-dmg
+
