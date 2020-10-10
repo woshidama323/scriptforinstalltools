@@ -95,3 +95,8 @@ git update-index --no-assume-unchanged path/to/file
 　　
 ```
  
+## mac 常用命令集锦
+
+1. 查询gpu相关信息 system_profiler SPDisplaysDataType
+
+2. 磁盘查询相关 diskutil 
