@@ -106,3 +106,8 @@ https://stackoverflow.com/questions/38566367/installing-cuda-via-brew-and-dmg
 
 https://my.oschina.net/u/4408961/blog/3339845
 
+
+## sort 去重
+
+https://open.oregonstate.education/computationalbiology/chapter/sorting-first-and-last-lines/
+
