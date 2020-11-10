@@ -111,3 +111,7 @@ https://my.oschina.net/u/4408961/blog/3339845
 
 https://open.oregonstate.education/computationalbiology/chapter/sorting-first-and-last-lines/
 
+
+## bash 数组的使用
+
+1. arr=()   ${#arr[@]}
