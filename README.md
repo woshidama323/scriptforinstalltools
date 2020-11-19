@@ -115,3 +115,10 @@ https://open.oregonstate.education/computationalbiology/chapter/sorting-first-an
 ## bash 数组的使用
 
 1. arr=()   ${#arr[@]}
+
+## github 常用方法
+
+1. github上比较两个branch或者tag的方法
+
+https://github.com/filecoin-project/lotus/compare/v1.2.0...v1.1.2
+
