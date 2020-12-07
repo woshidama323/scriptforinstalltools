@@ -122,3 +122,12 @@ https://open.oregonstate.education/computationalbiology/chapter/sorting-first-an
 
 https://github.com/filecoin-project/lotus/compare/v1.2.0...v1.1.2
 
+### 网络问题排查
+
+1. netstat -antn|grep 10.10.10.10
+
+2. tcpdump,tcpflow
+
+3. ss 
+
+4. lsof
