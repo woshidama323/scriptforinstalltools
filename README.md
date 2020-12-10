@@ -131,3 +131,7 @@ https://github.com/filecoin-project/lotus/compare/v1.2.0...v1.1.2
 3. ss 
 
 4. lsof
+
+
+### 数据库安装教程
+postgres  https://dataschool.com/learn-sql/how-to-start-a-postgresql-server-on-mac-os-x/
