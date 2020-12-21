@@ -135,3 +135,9 @@ https://github.com/filecoin-project/lotus/compare/v1.2.0...v1.1.2
 
 ### 数据库安装教程
 postgres  https://dataschool.com/learn-sql/how-to-start-a-postgresql-server-on-mac-os-x/
+
+
+### 找到两个集合的交集
+
+grep找到两个文件的交集
+grep  -f /tmp/harry115 /tmp/harrysectorlistbig2 |sort -u
