@@ -150,5 +150,7 @@ jupyter notebook --no-browser
 
 启动之后 可以找到url 登录到jupyter中 注意修改下本地端口号
 
+如果遇到创建或者打开文件的时候出现 500报错，可以尝试 [pip3 install --upgrade --user nbconvert](https://github.com/jupyter/notebook/issues/3629)
+
 
 
