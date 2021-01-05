@@ -141,3 +141,14 @@ postgres  https://dataschool.com/learn-sql/how-to-start-a-postgresql-server-on-m
 
 grep找到两个文件的交集
 grep  -f /tmp/harry115 /tmp/harrysectorlistbig2 |sort -u
+
+### 远端服务器安装jupyter 本地访问的方法
+
+ssh -L 8778:localhost:8888 [username]@[ip]     方式登录到远端服务器你中，然后启动jupyter  其中8888为远端jupyter的端口 8778为本地端口号
+
+jupyter notebook --no-browser
+
+启动之后 可以找到url 登录到jupyter中 注意修改下本地端口号
+
+
+
