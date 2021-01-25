@@ -153,4 +153,8 @@ jupyter notebook --no-browser
 如果遇到创建或者打开文件的时候出现 500报错，可以尝试 [pip3 install --upgrade --user nbconvert](https://github.com/jupyter/notebook/issues/3629)
 
 
-
+### python 常见问题记录
+```shell
+  安装最新的pip的方法（ubuntu上）
+  curl https://bootstrap.pypa.io/get-pip.py | python3
+```
