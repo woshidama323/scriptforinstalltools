@@ -158,3 +158,8 @@ jupyter notebook --no-browser
   安装最新的pip的方法（ubuntu上）
   curl https://bootstrap.pypa.io/get-pip.py | python3
 ```
+
+### vscode 快捷键
+```shell
+ Fold All: Windows: Ctrl + k + 0; Mac: ⌘ + k + 0. Unfold All: Windows: Ctrl + k + j; Mac: ⌘ + k + j. 
+```
