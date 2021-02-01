@@ -163,3 +163,11 @@ jupyter notebook --no-browser
 ```shell
  Fold All: Windows: Ctrl + k + 0; Mac: ⌘ + k + 0. Unfold All: Windows: Ctrl + k + j; Mac: ⌘ + k + j. 
 ```
+
+### linux 命令
+```shell
+    ### date日期转换成unix时间戳
+    258:2021-01-30T01:04:09.266Z 258:2021-01-30T16:21:36.471Z
+    date -d "2021-01-30T01:04:09.266Z" +"%s"
+
+```
