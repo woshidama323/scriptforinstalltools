@@ -152,6 +152,15 @@ jupyter notebook --no-browser
 
 如果遇到创建或者打开文件的时候出现 500报错，可以尝试 [pip3 install --upgrade --user nbconvert](https://github.com/jupyter/notebook/issues/3629)
 
+### 通过ssh 隧道 访问远端服务器上的数据库的方法
+
+https://www.a2hosting.com/kb/developer-corner/postgresql/remote-postgresql-connections
+
+先启动ssh连接和端口转发 
+ssh -i privatekey user@example.com -L 54322:localhost:5432  （也可以密码登录方式)
+
+本地连接localhost：54322 即可连接服务
+
 
 ### python 常见问题记录
 ```shell
