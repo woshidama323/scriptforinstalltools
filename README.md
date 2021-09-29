@@ -161,6 +161,21 @@ ssh -i privatekey user@example.com -L 54322:localhost:5432  （也可以密码�
 
 本地连接localhost：54322 即可连接服务
 
+也可以后台执行 不过关闭的时候需要复杂一点操作 [参考](https://mpharrigan.com/2016/05/17/background-ssh.html)
+```shell
+### 开隧道 
+ssh -fNT -L 8888:localhost:8888 user@hostname
+
+### 关隧道
+ssh -M -S my-socket-name -fNT -L 8888:localhost:8888 user@hostname
+ssh -S my-socket-name -O check user@hostname
+>> Master running (pid=3517) 
+ssh -S my-socket-name -O exit user@hostname
+>> Exit request sent.
+
+```
+
+
 
 ### python 常见问题记录
 ```shell
